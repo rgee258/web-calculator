@@ -1,1 +1,1 @@
-# web-calculator
+The creation of a calculator following The Odin Project.
