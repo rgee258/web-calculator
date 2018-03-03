@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div>
+		<h1 class="heading">Calculator</h1>
+	</div>
+	<div class="calculator">
+		<div class="display-container">
+			<div class="display"><p class="display-text">0</p></div>
+		</div>
+		<div class="buttons-container">
+			<div class="row row-one">
+				<div class="button placeholder"></div>
+				<div class="button placeholder"></div>
+				<div class="button op back" type="button" onclick="backNum()">&larr;</div>
+				<div class="button op clear" type="button" onclick="clearCalc()">C</div>
+			</div>
+			<div class="row row-two">
+				<div class="button digit seven" type="button" onclick="displayUpdate(7)">7</div>
+				<div class="button digit eight" type="button" onclick="displayUpdate(8)">8</div>
+				<div class="button digit nine" type="button" onclick="displayUpdate(9)">9</div>
+				<div class="button op add" type="button" onclick="setOp(&quot;add&quot;)">+</div>
+			</div>
+			<div class="row row-three">
+				<div class="button digit four" type="button" onclick="displayUpdate(4)">4</div>
+				<div class="button digit five" type="button" onclick="displayUpdate(5)">5</div>
+				<div class="button digit six" type="button" onclick="displayUpdate(6)">6</div>
+				<div class="button op subtract" type="button" onclick="setOp(&quot;subtract&quot;)">&minus;</div>
+			</div>
+			<div class="row row-four">
+				<div class="button digit one" type="button" onclick="displayUpdate(1)">1</div>
+				<div class="button digit two" type="button" onclick="displayUpdate(2)">2</div>
+				<div class="button digit three" type="button" onclick="displayUpdate(3)">3</div>
+				<div class="button op multiply" type="button" onclick="setOp(&quot;multiply&quot;)">&times;</div>
+			</div>
+			<div class="row row-five">
+				<div class="button digit zero" type="button" onclick="displayUpdate(0)">0</div>
+				<div class="button digit decimal" type="button" onclick="addDecimal()">.</div>
+				<div class="button digit equals" type="button" onclick="equals()">=</div>
+				<div class="button op divide" type="button" onclick="setOp(&quot;divide&quot;)">&divide;</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
